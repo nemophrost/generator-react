@@ -1,0 +1,11 @@
+{
+  "name": "<%= _.slugify(appname) %>",
+  "version": "0.0.0",
+  "dependencies": {<% if (requireJS) { %>
+    "requirejs": "~2.1.9",
+    "almond": "latest",<% } %><% if (includeModernizr) { %>
+    "modernizr": "~2.6.2",<% } %>
+    "react": "~0.5.1"
+  },
+  "devDependencies": {}
+}
