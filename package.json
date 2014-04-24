@@ -9,13 +9,13 @@
     "front-end",
     "react"
   ],
-  "homepage": "https://github.com/nemophrost/generator-webapp",
-  "bugs": "https://github.com/nemophrost/generator-webapp/issues",
+  "homepage": "https://github.com/nemophrost/generator-react",
+  "bugs": "https://github.com/nemophrost/generator-react/issues",
   "author": "Chrome Developer Relations",
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/nemophrost/generator-webapp.git"
+    "url": "git://github.com/nemophrost/generator-react.git"
   },
   "scripts": {
     "test": "mocha --reporter spec"
