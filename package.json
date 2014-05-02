@@ -1,6 +1,6 @@
 {
   "name": "generator-react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Scaffold out a front-end web app with React",
   "keywords": [
     "yeoman-generator",
@@ -11,7 +11,7 @@
   ],
   "homepage": "https://github.com/nemophrost/generator-react",
   "bugs": "https://github.com/nemophrost/generator-react/issues",
-  "author": "Chrome Developer Relations",
+  "author": "Alma Madsen",
   "main": "app/index.js",
   "repository": {
     "type": "git",
