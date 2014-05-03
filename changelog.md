@@ -1,6 +1,8 @@
-### v0.4.2 (2013-09-07)
+### v0.0.2 (2014-05-02)
 
-- Easer livereload configuration thanks to grunt-contrib-connect 0.4
-- grunt-open was replaced with new grunt-contrib-connect feature
-- bootstrap-dropdown was added to requirejs config
-- Bootstrap fonts are now correctly copied during build
+- Fixed typos in package.json
+
+
+### v0.0.1 (2013-11-23)
+
+- Initial release
