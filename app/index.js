@@ -17,13 +17,6 @@ var ReactGenerator = module.exports = function ReactGenerator(args, options, con
   // resolved to mocha by default (could be switched to jasmine for instance)
   this.hookFor('test-framework', { as: 'app' });
 
-  this.on('end', function () {
-    this.installDependencies({
-      skipInstall: options['skip-install'],
-      skipMessage: options['skip-install-message']
-    });
-  });
-
   this.pkg = JSON.parse(this.readFileAsString(path.join(__dirname, '../package.json')));
 };
 
@@ -152,4 +145,19 @@ ReactGenerator.prototype.app = function app() {
   this.mkdir('app/styles');
   this.mkdir('app/images');
   this.write('app/index.html', this.indexFile);
+};
+
+ReactGenerator.prototype.install = function() {
+  this.invoke(this.options['test-framework'], {
+    options: {
+      'skip-message': this.options['skip-install-message'],
+      'skip-install': this.options['skip-install'],
+      'coffee': this.options.coffee
+    }
+  });
+
+  if (!this.options['skip-install-message']) {
+    this.bowerInstall();
+    this.npmInstall();
+  }
 };
